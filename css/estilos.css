@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body{
+    background-color: rgb(255, 255, 243);
+    font-family: 'Playfair Display', serif;
+    font-family: 'Gloock', serif;
+    font-weight: 400;
+    
+}
+
+/*NAVEGACIÓN*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    color: #252525;
+    padding: 1rem;
+    box-shadow: 0 1px 10px black;
+    z-index: 1;
+  }
+  
+  .logo {
+    max-width: 150px;
+  }
+  main{
+    padding: 3rem;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0 1rem;
+  }
+  
+  nav a {
+    color: #252525;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    border-bottom: 2px solid #252525;
+  }
+  
+  .hamburger-menu {
+    display: none;
+  }
+  
+  .menu-desplegable {
+    display: none;
+    /* otras propiedades */
+  }
+  
+  .menu-desplegable.activo {
+    display: block;
+    background-color: #ffe4e4;
+  }
+  
+  .menu-desplegable.activo ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-desplegable.activo li {
+    margin: 0;
+  }
+  
+  .menu-desplegable.activo a {
+    display: block;
+    color: #252525;
+    padding: 1rem;
+    text-decoration: none;
+    border-bottom: 1px solid #252525;
+  }
+  
+  .menu-desplegable.activo a:hover {
+    background-color: #ffd2d2;
+  }
+
+  /*imagen intro*/
+
+  .imagen-con-texto {
+    background-image: url('/img/1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+  }
+  
+  .contenido {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+  }
+  footer{
+    text-align: center;
+  }
+  
+  /* Estilos para tablet */
+  @media only screen and (max-width: 768px) {
+    /*NAVEGACIÓN*/
+    .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+    }
+    .menu li {
+      margin: 0;
+      text-align: center;
+    }
+    .menu a {
+      display: block;
+      padding: 1rem;
+      border-bottom: 1px solid #252525;
+    }
+    .hamburger-menu {
+      display: block;
+      cursor: pointer;
+    }
+    .bar {
+      width: 25px;
+      height: 3px;
+      background-color: #252525;
+      margin: 5px;
+    }
+    /*IMAGEN INTRO*/
+     .imagen-con-texto {
+          height: 250px;
+          background-position: top;
+     }
+    .contenido {
+          position: static;
+          background-color: transparent;
+          color: #000;
+        }
+      }
+      
+    
+  
+  
+  /* Estilos para teléfonos */
+  @media only screen and (max-width: 480px) {
+    .logo {
+      max-width: 100px;
+    }
+    nav li {
+      margin: 0.5rem;
+    }
+    .menu a {
+      padding: 0.5rem;
+    }
+  }
+  
