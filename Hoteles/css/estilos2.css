@@ -88,44 +88,6 @@ header {
     background-color: #ffd2d2;
   }
 
-  /*imagen intro*/
-
-  .imagen-con-texto {
-    background-image: url('./img/1.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    position: relative;
-  }
-
-/*            MARCADOR             */
-
-#countdown {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-top: 1rem;
-}
-
-#countdown > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 1rem;
-}
-
-#countdown > div > span {
-  font-size: 4rem;
-  margin-bottom: 0.5rem;
-}
-
-.smalltext {
-  font-size: 1rem;
-  color: #777;
-}
-
   
 /*                  ------------------                */
 
@@ -174,31 +136,6 @@ header {
       background-color: #252525;
       margin: 5px;
     }
-    /*IMAGEN INTRO*/
-     .imagen-con-texto {
-          height: 250px;
-          background-position: top;
-     }
-    .contenido {
-          position: static;
-          background-color: transparent;
-          color: #000;
-        }
-      
-
-
-      
-        #countdown {
-          font-size: 2rem;
-        }
-        
-        #countdown > div {
-          margin: 0 0.5rem;
-        }
-        
-        #countdown > div > span {
-          font-size: 3.5rem;
-        }
       
     }
       
@@ -219,13 +156,4 @@ header {
     }
 
 
-
-    #countdown > div {
-      margin: 0 0,5rem;
-    }
-    
-    #countdown > div > span {
-      font-size: 3rem;
-    }
-  }
-  
+}
