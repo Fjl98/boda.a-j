@@ -15,7 +15,7 @@ hamburgerMenu.addEventListener('click', () => {
 
 
 // Establecer la fecha del evento
-var countDownDate = new Date("July 22, 2023 00:00:00").getTime();
+var countDownDate = new Date("July 22, 2023 20:30:00").getTime();
 
 // Actualizar el contador cada segundo
 var x = setInterval(function() {
