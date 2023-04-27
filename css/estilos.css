@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(11, 11, 11, 0);
 }
 
 body{
@@ -10,30 +10,77 @@ body{
     font-family: 'Gloock', serif;
     font-weight: 400;
     
+    
+}
+
+.mapa{
+  display: flex;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+/*----------------- TEXTO,CAMPOS Y BOTONES ---------------------*/
+
+
+.bloque{
+  display: flex;
+  background-color: rgb(251, 251, 251);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 7px 7px 11px 11px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  justify-content: center;
 }
 .titulos{
-  margin-left: 30px;
+
+  margin: 0 30px 0 30px;
   font-size: 35px;
 }
 .cuerpo{
-  margin: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: white;
-  padding: 20px;
+  font-family: 'Gloock', serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 30px;
+}
+
+.email{
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 30px;
+  background-color: rgb(251, 251, 251);
   border-radius: 10px;
+  width: 300px;
+  height: 80px;
+  box-shadow: 0 7px 4px rgba(11, 11, 11, 0.1);
+}
+
+div a{
+  text-decoration: none;
+  color: rgb(11, 11, 11);
+}
+
+button a{
+  text-decoration: none;
+  color: rgb(251, 251, 251);
 }
 
 
-/*NAVEGACIÓN*/
+/*----------------- NAVEGACIÓN ---------------------*/
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #ffffff;
-    color: #252525;
+    background-color: rgb(251, 251, 251);
+    color: rgb(11, 11, 11);
     padding: 1rem;
-    box-shadow: 0 1px 10px black;
+    box-shadow: 0 1px 10px rgb(11, 11, 11);
     z-index: 1;
   }
   
@@ -59,12 +106,12 @@ header {
   }
   
   nav a {
-    color: #252525;
+    color: rgb(11, 11, 11);
     text-decoration: none;
   }
   
   nav a:hover {
-    border-bottom: 2px solid #252525;
+    border-bottom: 2px solid rgb(11, 11, 11);
   }
   
   .hamburger-menu {
@@ -78,7 +125,7 @@ header {
   
   .menu-desplegable.activo {
     display: block;
-    background-color: #f3f3f3;
+    background-color: rgb(251, 251, 251);
   }
   
   .menu-desplegable.activo ul {
@@ -93,35 +140,39 @@ header {
   
   .menu-desplegable.activo a {
     display: block;
-    color: #252525;
+    color: rgb(11, 11, 11);
     padding: 1rem;
     text-decoration: none;
-    border-bottom: 1px solid #252525;
+    border-bottom: 1px solid rgb(11, 11, 11);
   }
   
   .menu-desplegable.activo a:hover {
-    background-color: #c0c0c0;
+    background-color: rgb(255, 225, 225);
   }
 
-  /*imagen intro*/
+  /*-------------------------- imagen intro -------------------------*/
 
-  .imagen-con-texto {
-    position: relative;
-    height: 500px;
+  
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px; /* ajusta la altura a tu gusto */
+    background-color: rgb(255, 255, 243); /* color de fondo por defecto */
   }
   
-  .imagen-con-texto img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  .banner img {
+    max-width: 100%;
+    max-height: 100%;
     object-fit: cover;
+    
   }
 
-/*            MARCADOR             */
+
+/*--------------------- MARCADOR -------------------------*/
 
 #countdown {
+  font-family: 'Gloock', serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,16 +194,18 @@ header {
 }
 
 .smalltext {
+  font-family: 'Gloock', serif;
   font-size: 1rem;
   color: #777;
 }
-/*                  --------CARD----------                */
+/*-------------------------- CARD ---------------------------*/
 
 /* Estilos de las tarjetas */
 .card {
-  background-color: #fff;
+  font-family: 'Gloock', serif;
+  background-color: rgb(251, 251, 251);
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 7px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -179,8 +232,8 @@ header {
 }
 
 .card button {
-  background-color: #3b3b3b;
-  color: #fff;
+  background-color: rgb(11, 11, 11);
+  color: rgb(251, 251, 251);
   border: none;
   border-radius: 20px;
   padding: 10px 20px;
@@ -189,12 +242,6 @@ header {
   
 }
 
-a{
-  text-decoration: none;
-  color: white;
-}
-
-/* Estilos del contenedor */
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -202,19 +249,25 @@ a{
   padding: 20px;
 }
 
-
-
-  
 /*                  ------------------                */
 
 
   footer{
+    font-size: 14px;
     text-align: center;
+    margin: 10px 0 0 0;
+    padding: 10px 0 10px 0;
+    background-color: rgb(251, 251, 251);
+    box-shadow: 0 0 10px 8px rgba(0, 0, 0, 0.1);
   }
+
+
+
+
   
   /* Estilos para tablet */
   @media only screen and (max-width: 768px) {
-    /*NAVEGACIÓN*/
+    /*-------------- NAVEGACIÓN ----------------*/
     .menu {
       display: none;
       flex-direction: column;
@@ -222,7 +275,7 @@ a{
       top: 100%;
       left: 0;
       width: 100%;
-      background-color: #333;
+      background-color: rgb(11, 11, 11);
     }
     .menu li {
       margin: 0;
@@ -231,7 +284,7 @@ a{
     .menu a {
       display: block;
       padding: 1rem;
-      border-bottom: 1px solid #252525;
+      border-bottom: 1px solid rgb(11, 11, 11);
     }
     .hamburger-menu {
       display: block;
@@ -240,18 +293,23 @@ a{
     .bar {
       width: 25px;
       height: 3px;
-      background-color: #252525;
+      background-color: rgb(11, 11, 11);
       margin: 5px;
     }
-    /*IMAGEN INTRO*/
-    .imagen-con-texto {
-          height: 350px;
-          
+
+
+
+
+
+    /*-------------- IMAGEN INTRO -------------------*/
+    
+    .banner {
+      height: 500px; /* ajusta la altura a tu gusto */
     }
 
       
 
-
+    /*------------------ CONTADOR  -------------------*/
       
         #countdown {
           font-size: 2rem;
@@ -265,8 +323,9 @@ a{
           font-size: 3.5rem;
         }
       
-    }
+    
 
+    /*------------------ CARD  -------------------*/
 
     .card-container {
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -289,20 +348,30 @@ a{
       font-size: 16px;
       padding: 8px 16px;
     }
+  
 
+
+    /*------------------ TEXTO  -------------------*/
 
   .titulos{
-    font-size: 30px;
+    font-size: 25px;
   }
-    
+  .cuerpo{
+    font-size: 18px;
+  }
+
+
+
   
-      
-      
-    
+}  
+  
+  
   
   
   /* Estilos para teléfonos */
   @media only screen and (max-width: 390px) {
+
+    /*-------------- NAVEGACIÓN ----------------*/
     .logo {
       display: block;
       width: 40px;
@@ -315,7 +384,7 @@ a{
     }
 
 
-
+    /*------------------ CONTADOR  -------------------*/
     #countdown > div {
       margin: 0 0,5rem;
     }
@@ -323,10 +392,50 @@ a{
     #countdown > div > span {
       font-size: 3rem;
     }
+
+    
+  /*------------------ IMAGEN  -------------------*/
+  
+.banner {
+  height: 400px; /* ajusta la altura a tu gusto */
+}
+  /*------------------ MAPA  -------------------*/
+
+  .mapa{
+    width: 300px;
+    height: 250px;
   }
+
+
+  /*------------------ TEXTO  -------------------*/
+
   .titulos{
-    font-size: 25px;
+    font-size: 20px;
   }
     
+  .cuerpo{
+    margin: 10px;
+    font-size: 14px;
+  }
+
+  .email{
+    font-size: 15px;
+    width: 200px;
+  }
+
+  footer{
+    font-size: 11px;
+  }
 
 
+
+
+
+
+
+
+
+
+
+
+}
