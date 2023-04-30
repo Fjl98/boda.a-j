@@ -4,30 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Boda de Julio y Adelaida</title>
-
+  <!-- Aqui encontramos las tipografías -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Dancing+Script:wght@400;500&family=Satisfy&display=swap" rel="stylesheet">
 
-
+  <!-- Aqui encontramos el favicon -->
     <link rel="icon" type="image/jpg" href="img/favicon.ico"/>
   
-  
+  <!-- Aqui encontramos los estilos CSS -->
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-
+  <!-- Aqui encontramos el navegador con toda su estructura -->
   <header>
-      
+      <!-- esto es el logo de la izquierda que es una imagen con un enlace a la pagina inicial -->
           <a href="index.html"><img class="logo" src="img/logoadeboda.png" alt="Logo/Nombre novios"></a>
-      
+      <!-- Aqui encontramos el navegador con toda su estructura -->
           <nav>
+            <!-- esta es la navegacion que vemos cuando esta en formato ordenador o tablet -->
             <ul class="menu">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="Hoteles/index2.html">Hoteles</a></li>
                 <li><a href="Peluquerias/index3.html">Peluquerías</a></li>
                 <li><a href="Actividades/index4.html">Actividades</a></li>
               </ul>
+              <!-- Seria el menu hamburguesa -->
               <div class="hamburger-menu">
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -35,6 +37,7 @@
               </div>
             </nav>
           </header>
+          <!-- Esto seria lo que se veria si estuviera en formato telefono al desplegar el menu hamburguesa -->
           <div class="menu-desplegable">
             <ul>
               <li><a href="index.html">Inicio</a></li>
@@ -48,41 +51,47 @@
 
 
 
-        
+          <!-- Aqui encontramos la imagen de la pagina que esta al inicio -->
           <div class="banner">
             <img src="img/collage.boda1.png" alt="Banner">
           </div>
           
-      
-          <BR></BR>
+          
+          <BR></BR><!-- uso los "br" para hacer los espacios de la pagina ademas de usar el margin -->
+          <!-- Aqui encontramos los textos y parrafos que cada uno tiene unos estilos que estan en css -->
           <p  class="titulos2" style="text-align: center;">TIEMPO RESTANTE:</p>
           
         
-
-          <div id="countdown">
+          <!-- Aqui encontramos la cuenta atras del evento-->
+          <div id="countdown"> <!-- este es el marcador entero que lo controla-->
             <div>
+              <!-- los meses-->
               <span id="months"></span>
               <div class="smalltext">Meses</div>
             </div>
             <div>
+              <!-- los dias-->
               <span id="days"></span>
               <div class="smalltext">Días</div>
             </div>
             <div>
+              <!-- las horas-->
               <span id="hours"></span>
               <div class="smalltext">Horas</div>
             </div>
             <div>
+              <!-- las minutos-->
               <span id="minutes"></span>
               <div class="smalltext">Minutos</div>
             </div>
             <div>
+              <!-- las segundos -->
               <span id="seconds"></span>
               <div class="smalltext">Segundos</div>
             </div>
           </div>
 
-
+          <!-- informacion de la boda-->
           <BR></BR>
           <p style="text-align: center;" class="titulos">Aquí podrás encontrar toda la información necesaria de la boda como horarios, servicios, alojamientos y más.</p>
             <br>
@@ -90,6 +99,7 @@
             <p class="titulos bloque">La ceremonia religiosa se celebrará (D.m.) el sábado 22 de Julio, a las 20:30, en la Real Colegiata de San Hipólito y la cena tendrá lugar a continuación en la Finca el Cercado.</p>
 
             <br>
+            <!-- aqui esta el mapa de google-->
             <iframe style="border: 1px solid black;" class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.9049736163765!2d-4.78793956339361!3d37.885904937083744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6cdf6394fa4de7%3A0x733d4ac27e964a7d!2sReal%20Colegiata%20de%20San%20Hip%C3%B3lito!5e0!3m2!1ses!2ses!4v1682550600195!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <br>
             <p class="titulos bloque">Se dispondrá de servicio de autobuses para llegar a la Finca con salida desde el Paseo de la Victoria y vuelta con diferentes horarios y paradas.<br><br>
@@ -99,24 +109,36 @@
           <p class="titulos">Servicios:</p>
           <BR></BR>
 
-
-        <div class="card-container">
+              <!-- las cards-->
+        <div class="card-container"><!-- contenedor completo-->
+          <!-- contenedor card -->
             <div class="card">
+              <!-- contenedor img-->
               <img src="img/logoadeboda.png" alt="placeholder image">
+              <!-- contenedor texto-->
               <h3>Hoteles</h3>
               <p>Aquí podrás encontrar los diferentes alojamientos.</p>
+              <!-- contenedor boton-->
               <button><a href="Hoteles/index2.html">Ver más</a></button>
             </div>
+            <!-- contenedor card -->
             <div class="card">
+              <!-- contenedor imagen -->
               <img src="img/logoadeboda.png" alt="placeholder image">
+              <!-- contenedor texto-->
               <h3>Peluquerías</h3>
               <p>Aquí podrás encontrar los contactos de peluquerias.</p>
+              <!-- contenedor boton-->
               <button><a href="Peluquerias/index3.html">Ver más</a></button>
             </div>
+            <!-- contenedor card -->
             <div class="card">
+              <!-- contenedor imagen -->
               <img src="img/logoadeboda.png" alt="placeholder image">
+              <!-- contenedor texto-->
               <h3>Actividades</h3>
               <p>Aquí podrás encontrar información de actividades para hacer en Córdoba.</p>
+              <!-- contenedor boton-->
               <button><a href="Actividades/index4.html">Ver más</a></button>
             </div>
         </div>
@@ -127,6 +149,7 @@
           <br>
           <p class="cuerpo">Si necesita más información puede contactar con:</p>
           <br>
+          <!-- contenedor informacion de contacto-->
             <div class="email">
             Adelaida: <p>ade_laguna@hotmail.com</p>
               <br>
@@ -139,12 +162,12 @@
           </p>
           
           
-  
+          <!-- contenedor pie de pagina-->
     <footer>
       <span>&copy; 2023. Creada por Fº Jesús Laguna. Todos los derechos reservados.</span>
     </footer>
 
-    
+    <!-- enlace de archivos JS-->
     <script src="js/funciones.js"></script>
     
 </body>

@@ -1,3 +1,6 @@
+/*-----------------------------------------------------------------------------------------
+LA MAYORIA DEL ARCHIVO ES IGUAL QUE EL PRIMERO POR ESO NO EXPLICARÉ TODO
+-------------------------------------------------------------------------------------------*/
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const menuDesplegable = document.querySelector('.menu-desplegable');
 let menuAbierto = false;

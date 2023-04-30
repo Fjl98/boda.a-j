@@ -1,12 +1,12 @@
-const hamburgerMenu = document.querySelector('.hamburger-menu');
-const menuDesplegable = document.querySelector('.menu-desplegable');
-let menuAbierto = false;
+const hamburgerMenu = document.querySelector('.hamburger-menu'); /*llamamos al menu hamburguesa*/
+const menuDesplegable = document.querySelector('.menu-desplegable'); /*llamamos al menu despliegue */
+let menuAbierto = false; /*esta false para que este desactivado y lo activemos al hacer click*/
 
-hamburgerMenu.addEventListener('click', () => {
-  if (menuAbierto) {
+hamburgerMenu.addEventListener('click', () => { /*funcion click*/
+  if (menuAbierto) { /*aqui estaria cerrado ya que no esta activo*/
     menuDesplegable.classList.remove('activo');
     menuAbierto = false;
-  } else {
+  } else { /*si esta clickado se abre la pestaña y aparece*/
     menuDesplegable.classList.add('activo');
     menuAbierto = true;
   }
@@ -25,6 +25,7 @@ var x = setInterval(function() {
 
   // Calcular la diferencia entre la fecha actual y la fecha del evento
   var distance = countDownDate - now;
+
 
   // Calcular los meses, días, horas, minutos y segundos restantes
   var months = Math.floor(distance / (1000 * 60 * 60 * 24 * 30));

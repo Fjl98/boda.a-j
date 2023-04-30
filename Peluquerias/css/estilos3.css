@@ -1,3 +1,6 @@
+/*-----------------------------------------------------------------------------------------
+LA MAYORIA DEL ARCHIVO ES IGUAL QUE EL PRIMERO POR ESO NO EXPLICARÉ TODO
+-------------------------------------------------------------------------------------------*/
 *{
     padding: 0;
     margin: 0;
@@ -31,7 +34,7 @@ body{
   margin: 30px;
 }
 
-
+/* ENLACES */
 div a{
   text-decoration: none;
   color: rgb(11, 11, 11);
@@ -86,6 +89,8 @@ nav a:hover {
   border-bottom: 2px solid rgb(11, 11, 11);
 }
 
+/* MENU HAMBURGUESA */
+
 .hamburger-menu {
   display: none;
 }
@@ -137,7 +142,7 @@ nav a:hover {
   padding: 20px;
   text-align: center;
 }
-
+/* PROPIEDADES DE LAS CARDS */
 .card img {
   border-radius: 50%;
   height: 150px;
@@ -167,7 +172,7 @@ nav a:hover {
   cursor: pointer;
   
 }
-
+/* CONTENEDOR QUE ALMACEN LAS CARDS */
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -177,10 +182,8 @@ nav a:hover {
 
 
   
-/*                  ------------------                */
+/*                  ---------- PIE DE PAGINA --------                */
 
-  
-  
 footer{
   font-size: 14px;
   text-align: center;
@@ -190,9 +193,6 @@ footer{
   box-shadow: 0 0 10px 8px rgba(0, 0, 0, 0.1);
   
 }
-
-
-
 
 
   

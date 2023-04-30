@@ -1,17 +1,18 @@
+/*Selector universal*/
 *{
     padding: 0;
     margin: 0;
     -webkit-tap-highlight-color: rgba(11, 11, 11, 0);
 }
-
+/* aqui ponemos la informacion que afecta a la pagina completa como la tipografia y el fondo*/
 body{
     background-color: rgb(255, 255, 243);
-    font-family: 'Dancing Script', cursive;
-    font-weight: 400;
+    font-family: 'Dancing Script', cursive; /* TIPOGRAFIA PRINCIPAL */
+    font-weight: 400; /* ES REGULAR */
     
     
 }
-
+/*Esto sirve para centrar el mapa y poner el margen */
 .mapa{
   display: flex;
   margin: 20px auto;
@@ -21,34 +22,36 @@ body{
 
 /*----------------- TEXTO,CAMPOS Y BOTONES ---------------------*/
 
-
+/*aqui creamos los recuadros de algunos campos de texto para que se vean mejor*/
 .bloque{
   
   display: flex;
   background-color: rgb(251, 251, 251);
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 7px 7px 11px 11px rgba(0, 0, 0, 0.2);
+  box-shadow: 7px 7px 11px 11px rgba(0, 0, 0, 0.2); /* LE AÑADIMOS SOMBRA  */
   text-align: center;
   justify-content: center;
 }
-
+/*Aqui tenemos un tipo de letra que usamos y con su tamaño seria los titulos*/
 .titulos2{
-  font-family: 'Amatic SC', cursive; 
+  font-family: 'Amatic SC', cursive; /* OTRA TIPOGRAFIA PERO PARA UN TEXTO */
   margin: 0 30px 0 30px;
   font-size: 35px;
 }
+/*Aqui tenemos un tipo de letra que usamos y con su tamaño de titulos*/
 .titulos{
-  font-family: 'Satisfy', cursive;
+  font-family: 'Satisfy', cursive; /* TIPOGRAFIA PARA TODOS LOS TITULOS */
   margin: 0 30px 0 30px;
   font-size: 35px;
 }
+/*Aqui tenemos un tipo de letra que usamos y con su tamaño del cuerpo*/
 .cuerpo{
   font-weight: 400;
   font-size: 20px;
   margin: 30px;
 }
-
+/*Aqui tenemos el bloque donde se almacena los contactos */
 .email{
   font-size: 20px;
   display: flex;
@@ -64,12 +67,12 @@ body{
   height: 80px;
   box-shadow: 0 7px 4px rgba(11, 11, 11, 0.1);
 }
-
+/*le aplicamos los estilos a los enlaces para qie no aparezca con el color default */
 div a{
-  text-decoration: none;
+  text-decoration: none; /* QUITAMOS LA DECORACION QIE VIENE */
   color: rgb(11, 11, 11);
 }
-
+/*le aplicamos los estilos a los botones para qie no aparezca con el color default */
 button a{
   text-decoration: none;
   color: rgb(251, 251, 251);
@@ -77,19 +80,19 @@ button a{
 
 
 /*----------------- NAVEGACIÓN ---------------------*/
-
+/*aplicamos todos los parametros para el bloque esntero de la navegacion en donde se almacena toda la info */
 header {
     font-size: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* PARA QUE ESTEN EN CADA ESQUINA */
     background-color: rgb(251, 251, 251);
     color: rgb(11, 11, 11);
     padding: 1rem;
     box-shadow: 0 1px 10px rgb(11, 11, 11);
     z-index: 1;
   }
-  
+  /*tamaño del logo de la izquierda */
   .logo {
     display: block;
     width: 65px;
@@ -99,51 +102,51 @@ header {
   main{
     padding: 3rem;
   }
-  
+  /*aqui esta para añadir las propiedades a las listas del navegador */
   nav ul {
     display: flex;
-    list-style: none;
+    list-style: none; /* LE QUITAMOS LA APARIENCIA */
     margin: 0;
     padding: 0;
   }
-  
+  /*le aplicamos un espacio a los elementos del navegador */
   nav li {
     margin: 0 1rem;
   }
-  
+  /*le quitamos y añadimos estilo a los enlaces  */
   nav a {
     color: rgb(11, 11, 11);
     text-decoration: none;
   }
-  
+  /*le aplicamos una line abajo cuando pasemos al lado */
   nav a:hover {
     border-bottom: 2px solid rgb(11, 11, 11);
   }
-  
+  /*para que no aparezca hasta que sea su tamaño */
   .hamburger-menu {
     display: none;
   }
-  
+  /*para que no aparezca hasta que sea su tamaño */
   .menu-desplegable {
     display: none;
     /* otras propiedades */
   }
-  
+  /*cuando esta activo el menu hamburguesa aparezca la pestaña*/
   .menu-desplegable.activo {
     display: block;
     background-color: rgb(251, 251, 251);
   }
-  
+  /*las propidades de la lista en general */
   .menu-desplegable.activo ul {
     list-style: none;
     padding: 0;
     margin: 0;
   }
-  
+  /*las propidades de la lista */
   .menu-desplegable.activo li {
     margin: 0;
   }
-  
+  /*las propidades de los enlaces de cada pestaña de navegacion */
   .menu-desplegable.activo a {
     display: block;
     color: rgb(11, 11, 11);
@@ -151,32 +154,32 @@ header {
     text-decoration: none;
     border-bottom: 1px solid rgb(11, 11, 11);
   }
-  
+  /*al poner encima que aparezca de ese color*/
   .menu-desplegable.activo a:hover {
     background-color: rgb(206, 206, 206);
   }
 
   /*-------------------------- imagen intro -------------------------*/
 
-  
+  /*las propidades del banner completo para centrarla  */
   .banner {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 600px; /* ajusta la altura a tu gusto */
+    height: 600px; /* ajusta la altura*/
     background-color: rgb(255, 255, 243); /* color de fondo por defecto */
   }
-  
+  /*las propidades de la imagen solo no del fondo */
   .banner img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: cover;
+    object-fit: cover; /*para que ocupe todo*/
     
   }
 
 
 /*--------------------- MARCADOR -------------------------*/
-
+/*las propidades del marcador completo*/
 #countdown {
   font-family: 'Satisfy', cursive;
   display: flex;
@@ -186,19 +189,19 @@ header {
   font-weight: bold;
   margin-top: 1rem;
 }
-
+/*Todos los elementos que son hijos directos de contenedor para eso sirve el > eso que afecta a cada contenedor*/
 #countdown > div {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 1rem;
 }
-
+/*afecta a cada numero*/
 #countdown > div > span {
   font-size: 4rem;
   margin-bottom: 0.5rem;
 }
-
+/*afecta al texto de abajo de los numeros*/
 .smalltext {
   font-family: 'Satisfy', cursive;
   font-size: 1rem;
@@ -218,25 +221,25 @@ header {
   padding: 20px;
   text-align: center;
 }
-
+/*las propidades de la imagen*/
 .card img {
   border-radius: 50%;
   height: 150px;
   width: 150px;
   margin-bottom: 20px;
 }
-
+/*las propidades del titulo*/
 .card h3 {
   font-size: 24px;
   margin-bottom: 10px;
 }
-
+/*las propidades del texto descriptivo*/
 .card p {
   font-size: 18px;
   margin-bottom: 20px;
   
 }
-
+/*las propidades del boton*/
 .card button {
   background-color: rgb(11, 11, 11);
   color: rgb(251, 251, 251);
@@ -247,17 +250,17 @@ header {
   cursor: pointer;
   font-family: 'Dancing Script', cursive;
 }
-
+/*las propidades del contenedor completo para que se vayan situando las tarjetas por el tamaño de las ventaanas*/
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));/*paea que se vaya adaptando en la pantalla*/
   grid-gap: 20px;
   padding: 20px;
 }
 
 /*                  ------------------                */
 
-
+/*las propidades del pie de pagina*/
   footer{
     font-size: 14px;
     text-align: center;
@@ -274,8 +277,9 @@ header {
   /* Estilos para tablet */
   @media only screen and (max-width: 768px) {
     /*-------------- NAVEGACIÓN ----------------*/
+    /*las propidades del menu paera que aparezca el hamburguesa*/
     .menu {
-      display: none;
+      display: none; /* PARA QUE NO APAREZCA */
       flex-direction: column;
       position: absolute;
       top: 100%;
@@ -294,8 +298,9 @@ header {
     }
     .hamburger-menu {
       display: block;
-      cursor: pointer;
+      cursor: pointer; /* QUE CAMBIE EL CURSOR AL PASAR ENCIMA */
     }
+    /*las propidades del menu hamburguesa*/
     .bar {
       width: 25px;
       height: 3px;
@@ -316,7 +321,7 @@ header {
       
 
     /*------------------ CONTADOR  -------------------*/
-      
+      /*se ajusta el tamaño de la letra y el margen*/
         #countdown {
           font-size: 2rem;
         }
@@ -332,11 +337,11 @@ header {
     
 
     /*------------------ CARD  -------------------*/
-
+      /*se ajusta las catds al tamño de la pagina*/
     .card-container {
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
-    
+    /*se ajustan todas las propiedades para que quepan en ese tamaño como el texto y las imagenes*/
     .card img {
       height: 120px;
       width: 120px;
@@ -358,7 +363,7 @@ header {
 
 
     /*------------------ TEXTO  -------------------*/
-
+    /*las propidades del tamaño de los textos*/
   .titulos{
     font-size: 25px;
   }
@@ -378,6 +383,7 @@ header {
   @media only screen and (max-width: 390px) {
 
     /*-------------- NAVEGACIÓN ----------------*/
+    /*las propidades del menu hamburguesa para que sea mas chico y quepa en los dispoditivos moviles*/
     .logo {
       display: block;
       width: 40px;
@@ -391,6 +397,7 @@ header {
 
 
     /*------------------ CONTADOR  -------------------*/
+    /*ponemos mas pequeño el tamaño de letras y espaciado*/
     #countdown > div {
       margin: 0 0,5rem;
     }
@@ -403,10 +410,10 @@ header {
   /*------------------ IMAGEN  -------------------*/
   
 .banner {
-  height: 400px; /* ajusta la altura a tu gusto */
+  height: 400px; /* ajusta la altura*/
 }
   /*------------------ MAPA  -------------------*/
-
+  /*ajusto el tamaño del mapa para que aparezca bien*/
   .mapa{
     width: 300px;
     height: 250px;
@@ -414,7 +421,7 @@ header {
 
 
   /*------------------ TEXTO  -------------------*/
-
+  /*las propidades del tamaño de los textos */
   .titulos{
     font-size: 20px;
   }
@@ -432,14 +439,6 @@ header {
   footer{
     font-size: 11px;
   }
-
-
-
-
-
-
-
-
 
 
 
